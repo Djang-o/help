@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Socorro!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    </head>
+    <body>
+        <div  class="wrapper">
+            <div class="head-text">Help! - Online</div>
+            <div class="chat-box">
+            <form id= "conteudo" >
+                <div class="field">
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                </div>
+                <div class="field">
+                    <input type="text" id="matricula"  name="matricula" placeholder="Matricula">
+                </div>
+                <div class="field">
+                    <input type="text" id="sala" name="sala" placeholder="Sala">
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" id="observacao" name="observacao" placeholder="Observação"></textarea>
+                </div>
+                <div class="field">
+                    <button onclick="validar(), notifyTec();" type="button">Chamar</button>
+                </div>
+            </form>
+
+        <div id="loading" style="display:none ;">
+            <br> <br> <br> <br><br> <br> <br> <br>
+            <img class="icon-png" src="img/help.png">
+            <div class="hs">Aguarde...</div>
+            <br> <br> <br> <br><br> <br> <br> <br>
+            </div>
+            </div>
+        </div>
+        
+</body>
+<script type= "module" src="js/scriptTecnic.js"></script>
+<script type= "module" src="js/script.js"></script>
+</html>
